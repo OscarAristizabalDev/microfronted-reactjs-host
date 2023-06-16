@@ -3,12 +3,11 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
+import { Navbar } from "navbar/Navbar";
+
 const App = () => (
-  <div className="container">
-    <div>Name: 01-host</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
+  <>
+    <Navbar />
+  </>
 );
 ReactDOM.createRoot(document.getElementById("app") as HTMLElement).render(<App />);

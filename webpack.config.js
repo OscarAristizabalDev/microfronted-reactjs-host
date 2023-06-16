@@ -41,9 +41,11 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "01_host",
+      name: "host",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        navbar: "navbar@http://localhost:3001/remoteEntry.js" // se hace uso del microfronted navbar
+      },
       exposes: {},
       shared: {
         ...deps,
