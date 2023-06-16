@@ -44,7 +44,8 @@ module.exports = (_, argv) => ({
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        navbar: "navbar@http://localhost:3001/remoteEntry.js" // se hace uso del microfronted navbar
+        navbar: "navbar@http://localhost:3001/remoteEntry.js", // se hace uso del microfronted navbar
+        counterReact: "counter_mf@http://localhost:3002/remoteEntry.js" // se hace uso del microfronted navbar
       },
       exposes: {},
       shared: {
