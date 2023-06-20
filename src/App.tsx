@@ -5,7 +5,7 @@ import "./index.css";
 
 import { Navbar } from "navbar/Navbar"; // se importa el componente navbar, microfronted
 
-import { Counter } from "counterReact/CounterReact";
+import { Counter } from "counterReact/CounterReact"; // se importa el componente counter, microfronted
 
 const App = () => (
   <>
